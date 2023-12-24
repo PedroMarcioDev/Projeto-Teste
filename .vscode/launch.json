@@ -16,7 +16,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/workspaces/index.html"
+            "file": "/workspace/index.html"
         }
     ]
 }
