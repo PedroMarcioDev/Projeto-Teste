@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background-color:white;
+}
+
+textarea{
+    
+    font-style: italic;
+}
+
+h1 {
+    cursor:text;
+}
+
+button{
+    border-style:groove;
+    color:grey;
+    cursor: pointer;
+}
