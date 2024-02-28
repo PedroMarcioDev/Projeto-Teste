@@ -1,6 +1,7 @@
 body {
-    text-align:left;
-    background-color:rgb(191, 238, 241);
+    text-align:center;
+    background-size:auto;
+    background-color: rgb(133, 219, 235);
     cursor:default;
 }
 
@@ -9,9 +10,11 @@ textarea{
     height: 30px;
     width: 230px;
     font-size: 14px;
-    font-style:initial;
+    box-shadow: 5px 10px rgb(83, 82, 82);
     background-color: rgb(255, 255, 255);
     border-style:double;
+    border-radius: 10px;
+    table-layout:auto;
 }
 
 h1 {
@@ -25,8 +28,9 @@ h1 {
 }
 
 .formato {
-    font-weight: 10px;
-    height: 10px;
+    font-size: 14px;
+    height: 30px;
+    width: 245px;
 }
 
 button{
@@ -37,12 +41,21 @@ button{
     width: 100px;
     font-style: oblique;
     font-size: 20px;
-    background-color: rgb(32, 8, 139);
+    background-color: rgb(50, 31, 133);
+    border-radius: 20px;
 }
 
 select {
-    cursor: pointer;
+    cursor:alias;
 }
 option {
    cursor: pointer;
+   border-radius: 10px;
+}
+
+::placeholder{
+    font-style:italic;
+    text-align:center;
+    font-size: 15px;
+    
 }
