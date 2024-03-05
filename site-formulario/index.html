@@ -4,13 +4,13 @@
     <title>Formulários</title>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+
 </head>
   <body>
     <h1 id="watchme"> Faça seu cadastro </h1>
     <form
       name="meu_primeiro_formulario"
       method="POST"
-      action="gravaDados.php"
       enctype="multipart/form-data"
       >
       <label>Nome</label>
@@ -80,8 +80,8 @@
       <textarea class="formato" placeholder="Digite seu número de contato"></textarea>
       <br>
       <br>
-      <button id="button">Confirmar</button>
-      
+      <button onclick="alert('Cadastro teste confirmado')" id="button">Confirmar</button>
+
 </form>
 
 </body>

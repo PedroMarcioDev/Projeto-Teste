@@ -46,7 +46,7 @@ button{
 }
 
 select {
-    cursor:alias;
+    cursor:pointer;
 }
 option {
    cursor: pointer;
@@ -57,5 +57,5 @@ option {
     font-style:italic;
     text-align:center;
     font-size: 15px;
-    
+
 }
