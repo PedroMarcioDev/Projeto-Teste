@@ -7,36 +7,27 @@
 
 </head>
   <body>
-    <h1 id="watchme"> Faça seu cadastro </h1>
+    <h1 id="watchme" class="a1"> Faça seu cadastro </h1>
     <form
       name="meu_primeiro_formulario"
       method="POST"
       enctype="multipart/form-data"
       >
-      <label>Nome</label>
-      <br>
+      <p class="a2">Nome</p>
       <textarea placeholder="Digite seu nome"></textarea>
       <br>
       <br>
-      <label>Email</label>
-      <br>
+
+      <p class="a2">Email</p>
+
       <textarea placeholder="Digite seu email@.com"></textarea>
       <br>
-      <h3 class="verde">Data de aniversário</h3>
-      <label>Dias das Semana:</label>
-      <select name="dias_da_semana" >
-        <option value="segunda">Segunda-Feira</option>
-        <option value="terca">Terça-Feira</option>
-        <option value="quarta">Quarta-Feira</option>
-        <option value="quinta">Quinta-Feira</option>
-        <option value="sexta">Sexta-Feira</option>
-        <option value="sabado">Sábado</option>
-        <option value="domingo">Domingo</option>
-      </select>
-      <br>
-      <br>
-      <label>Dias do Mês:</label>
-      <select name="dias_do_mes">
+
+      <h3 class="a3">Data de aniversário</h3>
+
+
+      <p class="a2">Dias do Mês:</p>
+      <select  class="a4"  name="dias_do_mes">
         <option value="01">01</option>
         <option value="02">02</option>
         <option value="03">03</option>
@@ -68,19 +59,28 @@
         <option value="29">29</option>
         <option value="30">30</option>
       </select>
+
       <br>
       <br>
-      <label>Ano de nascimento</label>
-      <br>
+
+      <p class="a2">Ano de nascimento</p>
       <textarea placeholder="Digite o ano"></textarea>
+
       <br>
       <br>
-      <label>Contato:</label>
-      <br>
+
+      <h3 class="a3">Contato:</h3>     
       <textarea class="formato" placeholder="Digite seu número de contato"></textarea>
+
       <br>
       <br>
-      <button onclick="alert('Cadastro teste confirmado')" id="button">Confirmar</button>
+
+      <button 
+
+      onclick="alert('Cadastro teste confirmado')" 
+
+      id="button">Confirmar
+    </button>
 
 </form>
 

@@ -1,10 +1,19 @@
 body {
-    text-align:center;
+    text-align:left;
     background-size:auto;
-    background:-webkit-linear-gradient(right, red, yellow);
+    background:-webkit-linear-gradient(right, rgb(99, 64, 255), rgb(255, 5, 193));
     cursor:default;
+    /*    animation: slideInFromLeft 1s ease-in-out forwards;   */
 }
-
+/* Animação de opacidade*/
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 textarea{
     height: 30px;
@@ -14,17 +23,15 @@ textarea{
     background-color: rgb(255, 255, 255);
     border-style:double;
     border-radius: 10px;
-    table-layout:auto;
+    table-layout:fixed;
+    /* isso está conectato junto com o @keyframe de opacidade*/
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    
 }
 
 h1 {
     cursor:text;
-}
-
-.verde {
-    font-style:italic;
-    color: rgba(0, 0, 0, 0.863);
-    font-size: 23px;
 }
 
 .formato {
@@ -47,10 +54,15 @@ button{
 }
 
 button:hover{
-    background: green;
+    background: rgb(0, 0, 0);
 }
 
 select {
+    font-family: sans-serif;
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 10px rgb(83, 82, 82);
     cursor:pointer;
 }
 option {
@@ -63,5 +75,37 @@ option {
     text-align:center;
     font-size: 15px;
     border-radius: 24px;
-
 }
+
+/* Aqui comecei a mecher com animações e transições */
+@keyframes slideInFromLeft{
+    from {
+          transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.a1{
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+.a2{
+    font-style:normal;
+    font:sans-serif;
+    font-size:medium;
+    animation: slideInFromLeft 1.2s ease-in-out forwards;
+}
+
+.a3{
+    font-style:italic;
+    color: rgba(0, 0, 0, 0.863);
+    font-size: 23px;
+    animation: slideInFromLeft 1.2s ease-in-out forwards;
+}
+
+.a4{
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+
